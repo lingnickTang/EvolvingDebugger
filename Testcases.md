@@ -5,3 +5,6 @@
 
 ### Case 2: change stream output into text output
 
+### Case 3: Captcha recognition
+- slide captcha recognition
+- word click sequence 

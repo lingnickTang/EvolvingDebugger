@@ -1,8 +1,8 @@
 from openai import OpenAI
-from _KEYS import QEWN_KEY
+from _KEYS import DASHSCOPE_API_KEY
 
 client = OpenAI(
-    api_key= QEWN_KEY, # 替换成真实DashScope的API_KEY
+    api_key= DASHSCOPE_API_KEY, # 替换成真实DashScope的API_KEY
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",  # 填写DashScope服务endpoint
 )
 
@@ -11,11 +11,11 @@ completion = client.chat.completions.create(
     messages=[
         {
             'role': 'system',
-            'content': 'You are a helpful assistant.'
+            'content': '你是一个智能语音助手'
         },
         {
             'role': 'user',
-            'content': 'Please introduce yourself in brief.'
+            'content': ''
         }
     ],
     #stream=True
